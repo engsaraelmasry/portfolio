@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dosis:wght@200..800&family=Oxygen:wght@300;400;700&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+     <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
+        <p class="navbar-brand" id="logo">SARA</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="link" href="#About-Me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="link" href="#skills">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="link" href="#Contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header section -->
+    <section class="header">
+        <div class="text">
+            <h5>Hello, I am Sara</h5>
+            <p>I am an engineer </p>
+            <p>A certified International Trainer </p>
+            <a href="./my cv.pdf" id="cv" download>download CV</a>
+            <div class="icons">
+                <a href="https://www.facebook.com/share/1ETfPT2D3G/"><i class="fa-brands fa-facebook" id="icon"></i></a>
+                <a href="https://www.linkedin.com/in/sara-el-masry-26ab2969/"><i class="fa-brands fa-linkedin" id="icon"></i></a>
+                <a href="https://github.com/engsaraelmasry"><i class="fa-brands fa-github"   id="icon"></i></a>
+            </div>
+        </div>
+        <div class="imgg">
+            <img src="123.jpeg" alt="">
+        </div>
+    </section>
+    <!--aboutme section-->
+    <section class="about" id="About-Me">
+        <h1>About Me</h1>
+        <p>I design and deliver comprehensive computer science and programming curricula for diverse age groups, simplifying complex concepts to cultivate logical and analytical thinking.</p>
+    </section>
+    <!-- skills -->
+    <section class="my-skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <p>C++</p>
+            <div class="skill">
+                <div class="fg-skill fg1-skill">
+                    <div>90%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <p>Python</p>
+            <div class="skill">
+                <div class="fg-skill fg2-skill">
+                    <div>85%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <p>HTML</p>
+            <div class="skill">
+                <div class="fg-skill fg3-skill">
+                    <div>75%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <p>CSS</p>
+            <div class="skill">
+                <div class="fg-skill fg4-skill">
+                    <div>70%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <p>Kids Programming</p>
+            <div class="skill">
+                <div class="fg-skill fg5-skill">
+                    <div>95%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- projects -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-parent">
+            <div class="project">
+                <div class="imgg"></div>
+                <div class="link">
+                    <a href="https://engsaraelmasry.github.io/xo-game-structure-/">View project</a>
+                </div>
+            </div>
+        <div class="project">
+            <div class="imgg2"></div>
+            <div class="link">
+                <a href="https://engsaraelmasry.github.io/xo-game-structure-/">View project</a></div>
+           </div>
+        </div>
+    </section> 
+    
+    <!--contact me-->
+    <section class="contactt" id="Contact">
+        <h1>Contact Me</h1>
+        <div class="cmain">
+            <form class="form" method="post" >
+                <label class="txt">Your Name</label>
+                <input type="text" class="ip" ><br>
+                <label class="txt">Your Phone</label>
+                <input type="number" class="ip"><br>
+                <label class="txt">Your Email</label>
+                <input type="email" class="ip"><br>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea><br>
+                <button class="butn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+<footer class="footer">
+    <p> &copy; Sara Mohsen Elmasry</p>
+    <p> eng.sara.elmasry@gmail.com </p>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

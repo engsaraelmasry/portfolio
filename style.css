@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Oxygen", sans-serif;
+}
+:root{
+    --mainColor:rgb(158, 211, 220);
+    --secondColor:rgb(202, 97, 128);
+    --hoverColor:rgb(252, 183, 199);
+    --blackColor:black;
+    --whiteColor:white;
+}
+nav{
+    padding: 0 5% !important;
+    background-color: var(--mainColor);
+}
+nav #link{
+    color: var(--whiteColor);
+    font-size: 20px;
+    transition: all 2s;
+}
+nav #link:hover{
+    color: var(--secondColor);
+    scale: 1.1;
+}
+nav #logo{
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 2s;
+    font-family:cursive;
+
+}
+nav #logo:hover{
+    color: var(--secondColor);
+    scale: 1.1;
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.header .text{
+    width: 400px;
+    color: var(--whiteColor);
+    font-size: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.header .text h5{
+    margin-bottom: 10px;
+}
+.header .text p{
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.header .text #cv{
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    width: 50%;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 2s;
+}
+.header .text #cv:hover{
+    scale: 1.1;
+    background-color: var(--hoverColor);
+}
+.header .text .icons #icon {
+    font-size: 2.5em;
+    color: var(--secondColor);
+    transition: all 2s;
+}
+.header .text .icons #icon:hover{
+    scale: 1.1;
+    color: var(--hoverColor);
+}
+.header .imgg{
+    width: 400px;
+    border-radius: 10px 60px;
+    /* box-shadow: 3px 3px 8px 5px var(--hoverColor),-3px -3px 8px 5px var(--hoverColor); */
+    box-shadow: var(--hoverColor) 0px 8px 24px,var(--hoverColor) 0px 16px 56px, var(--hoverColor) 0px 24px 80px;
+    transition: all 2s;
+}
+.header .imgg:hover{
+    scale: 1.2;
+}
+.header .imgg img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px 60px;
+}
+@media screen and (max-width:900px) {
+    .header{
+    flex-direction: column;
+    align-items: center;
+}
+.header .text{
+    align-items: center;
+}
+.header .imgg{
+    width: 320px;
+    margin-top: 20px;
+}
+.header .imgg img{
+    height: 400px;
+}
+}
+@media screen and (max-width:460px) {
+    .header{
+    flex-direction: column;
+    align-items: center;
+}
+.header .text{
+    align-items: center;
+}
+.header .text{
+    width: 100%;
+    font-size: 15px;
+}
+.header .imgg{
+    width: 200px;
+    margin-top: 20px;
+}
+.header .imgg img{
+    height: 400px;
+}
+}
+.about{
+    width: 100%;
+    padding: 7% 5%;
+
+}
+.about h1{
+    color: var(--secondColor);
+    text-align: center;
+    font-weight: bold;
+    margin:50px;
+    transition: all 2s;
+}
+.about h1:hover{
+    color: var(--hoverColor);
+    scale: 1.1;
+}
+.about p{
+    width: 600px;
+    height: 100px;
+    font-size: 1em;
+    background-color: var(--mainColor);
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px 10px;
+    box-shadow: 3px 3px 7px 5px var(--hoverColor);
+    text-align: center;
+    color: var(--secondColor);
+}
+@media screen and (max-width:900px) {
+.about p{
+    width: 500px;
+    height: 120px;
+}
+}
+@media screen and (max-width:460px) {
+.about p{
+    width: 400px;
+    height: 130px;
+}
+}
+/* skills */
+
+.my-skills{
+    background-color: var(--mainColor);
+    width: 100%;
+    padding: 7% 5%;
+
+}
+.my-skills h2{
+    color: var(--secondColor);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 2s;
+    margin-bottom:50px;
+}
+.my-skills h2:hover{
+    color: var(--hoverColor);
+    scale: 1.1;
+}
+.my-skills .skills .skill{
+    width: 60%;
+    background-color: var(--hoverColor);
+    border-radius: 30px;
+}
+.my-skills .skills p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: var(--whiteColor);
+}
+.my-skills .skills .skill .fg-skill{
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--secondColor);
+}
+.my-skills .skills .skill .fg1-skill{
+    width: 95%;
+}
+.my-skills .skills .skill .fg2-skill{
+    width: 85%;
+}
+.my-skills .skills .skill .fg3-skill{
+    width: 75%;
+}
+.my-skills .skills .skill .fg4-skill{
+    width: 70%;
+}
+.my-skills .skills .skill .fg5-skill{
+    width: 95%;
+}
+
+/* projects */
+.projects{
+    width: 100%;
+    padding:10% 5%;
+}
+.projects h2{
+    color: var(--secondColor);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 2s;
+    margin-bottom:50px;
+}
+.projects h2:hover{
+    scale: 1.1;
+    color: var(--hoverColor);
+}
+.projects .projects-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projects .projects-parent .project{
+    width: 400px;
+    background-color: var(--hoverColor);
+    border-radius: 0 40px;
+    margin-bottom: 30px;
+}
+.projects .projects-parent .project .imgg{
+    background-image: url(./xo.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 0 40px 0 0;
+
+}
+.projects .projects-parent .project .imgg2{
+    background-image: url(./tt.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 0 40px 0 0;
+
+}
+.projects .projects-parent .project .link{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .projects-parent .project .link a{
+    text-decoration: none;
+    background-color: var(--mainColor);
+    padding: 10px 15px;
+    color: var(--whiteColor);
+    border-radius: 0 40px;
+    font-size: 23px;
+    font-weight: bold;
+    transition: all 2s;
+}
+.projects .projects-parent .project .link a:hover{
+    scale: 1.1;
+    color: var(--mainColor);
+    background: var(--whiteColor);
+}
+@media screen  and (max-width:900px){
+    .projects .projects-parent{
+
+    justify-content:center;
+}
+}
+
+/*contact me*/
+
+.contactt{
+    width: 100%;
+    
+}
+.contactt h1{
+    color: var(--secondColor);
+    text-align: center;
+    margin:50px;
+    font-weight: bold;
+    transition: all 2s;
+}
+.contactt h1:hover{
+    color: var(--hoverColor);
+    scale: 1.2;
+}
+
+.contactt .cmain{
+    width: 100%;
+    padding:10% 5%;
+    background-color: black;
+}
+
+.contactt .form{
+    width: 450px;
+    height: 550px;
+    border-radius: 30px 0;
+    background-color: var(--mainColor);
+    margin:auto;
+    padding: 20px;
+    box-shadow: var(--whiteColor) 0px 8px 24px;
+
+}
+.contactt .form .txt{
+    color: var(--whiteColor);
+    font-weight: 400;
+    font-size: large;
+    padding-right: 20px;
+}
+.contactt .form .ip{
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    padding: 10px;
+}
+.contactt .form .butn{
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 150px ;
+    /* margin: auto; */
+}
+.contactt textarea {
+    width: 100%; 
+    height: 120px;
+    padding: 10px; 
+    border: none; 
+    margin-top: 10px ;
+    border-radius: 4px; 
+}
+@media screen  and (max-width:900px){
+    .contactt .form{
+    width: 350px;
+}
+.contactt .form .butn{
+    margin-left: 110px ;
+}
+}
+
+
+/*footer*/
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    font-size:larger;
+    font-weight: bold;
+    padding: 15px;
+    
+}
+@media screen  and (max-width:900px){
+    .footer{
+     flex-direction: column;    
+    justify-content:space-around;
+    }
+}
+@media screen and (max-width:460px) {
+.footer{
+    flex-direction: column;    
+    justify-content:space-around;
+
+}
+}
+
+
