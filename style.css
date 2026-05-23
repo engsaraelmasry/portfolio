@@ -104,40 +104,61 @@ nav #logo:hover{
     border-radius: 10px 60px;
 }
 @media screen and (max-width:900px) {
-    .header{
-    flex-direction: column;
-    align-items: center;
-}
-.header .text{
-    align-items: center;
-}
-.header .imgg{
-    width: 320px;
-    margin-top: 20px;
-}
-.header .imgg img{
-    height: 400px;
-}
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        height: auto;
+        gap: 30px;
+        padding-bottom: 40px;
+    }
+    .header .text {
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+    .header .text #cv {
+        margin: 0 auto 30px auto;
+    }
+    .header .imgg {
+        width: 320px;
+        margin-top: 10px;
+    }
+    .header .imgg img {
+        height: 380px;
+    }
 }
 @media screen and (max-width:460px) {
-    .header{
-    flex-direction: column;
-    align-items: center;
-}
-.header .text{
-    align-items: center;
-}
-.header .text{
-    width: 100%;
-    font-size: 15px;
-}
-.header .imgg{
-    width: 200px;
-    margin-top: 20px;
-}
-.header .imgg img{
-    height: 400px;
-}
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        height: auto;
+        padding-bottom: 40px;
+        gap: 20px;
+    }
+    .header .text {
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        font-size: 14px;
+    }
+    .header .text p {
+        font-size: 1.5em;
+    }
+    .header .text #cv {
+        width: 70%;
+        margin: 0 auto 20px auto;
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+    .header .imgg {
+        width: 220px;
+        margin-top: 10px;
+    }
+    .header .imgg img {
+        height: 280px;
+    }
 }
 .about{
     width: 100%;
@@ -167,17 +188,20 @@ nav #logo:hover{
     text-align: center;
     color: var(--secondColor);
 }
-@media screen and (max-width:900px) {
-.about p{
-    width: 500px;
-    height: 120px;
-}
+media screen and (max-width:900px) {
+    .about p {
+        width: 85%;
+        height: auto;
+        min-height: 100px;
+    }
 }
 @media screen and (max-width:460px) {
-.about p{
-    width: 400px;
-    height: 130px;
-}
+    .about p {
+        width: 95%;
+        height: auto;
+        font-size: 0.9em;
+        padding: 15px;
+    }
 }
 /* skills */
 
@@ -234,6 +258,32 @@ nav #logo:hover{
 }
 .my-skills .skills .skill .fg5-skill{
     width: 95%;
+}
+@media screen and (max-width:900px) {
+    .my-skills .skills .skill {
+        width: 80%;
+    }
+    .my-skills .skills p {
+        font-size: 18px;
+    }
+    .my-skills .skills .skill .fg-skill {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:460px) {
+    .my-skills .skills .skill {
+        width: 100%;
+    }
+    .my-skills .skills p {
+        font-size: 16px;
+    }
+    .my-skills .skills .skill .fg-skill {
+        font-size: 15px;
+        padding: 8px;
+    }
+    .my-skills h2 {
+        font-size: 30px;
+    }
 }
 
 /* projects */
@@ -372,13 +422,48 @@ nav #logo:hover{
     margin-top: 10px ;
     border-radius: 4px; 
 }
-@media screen  and (max-width:900px){
-    .contactt .form{
-    width: 350px;
+@media screen and (max-width:900px) {
+    .contactt .form {
+        width: 85%;
+        height: auto;
+        padding: 25px 20px;
+    }
+    .contactt .form .ip {
+        width: calc(100% - 20px);
+    }
+    .contactt .form .butn {
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 60%;
+    }
 }
-.contactt .form .butn{
-    margin-left: 110px ;
-}
+@media screen and (max-width:460px) {
+    .contactt h1 {
+        font-size: 1.5em;
+        margin: 30px 20px;
+    }
+    .contactt .form {
+        width: 95%;
+        height: auto;
+        padding: 20px 15px;
+        border-radius: 20px 0;
+    }
+    .contactt .form .txt {
+        font-size: 0.95em;
+    }
+    .contactt .form .ip {
+        width: calc(100% - 10px);
+        margin: 8px 5px;
+    }
+    .contactt textarea {
+        height: 100px;
+    }
+    .contactt .form .butn {
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 70%;
+        padding: 15px;
+    }
 }
 
 
@@ -392,18 +477,22 @@ nav #logo:hover{
     padding: 15px;
     
 }
-@media screen  and (max-width:900px){
-    .footer{
-     flex-direction: column;    
-    justify-content:space-around;
+@media screen and (max-width:900px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
     }
 }
 @media screen and (max-width:460px) {
-.footer{
-    flex-direction: column;    
-    justify-content:space-around;
-
-}
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+        gap: 6px;
+    }
 }
 
 
