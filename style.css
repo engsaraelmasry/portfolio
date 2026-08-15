@@ -79,6 +79,24 @@ nav #logo:hover{
     scale: 1.1;
     background-color: var(--hoverColor);
 }
+.header .text #itot{
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    width: 50%;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 2s;
+}
+.header .text #itot:hover{
+    scale: 1.1;
+    background-color: var(--hoverColor);
+}
 .header .text .icons #icon {
     font-size: 2.5em;
     color: var(--secondColor);
@@ -148,6 +166,12 @@ nav #logo:hover{
     }
     .header .text #cv {
         width: 70%;
+        margin: 0 auto 20px auto;
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+    .header .text #itot{
+         width: 70%;
         margin: 0 auto 20px auto;
         font-size: 1em;
         padding: 12px 15px;
