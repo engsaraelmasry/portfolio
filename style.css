@@ -520,7 +520,7 @@ nav #logo:hover{
     margin: 30px;
     transition: all 2s;
 }
-.about h1:hover{
+#reviews h1:hover{
     color: var(--hoverColor);
     scale: 1.1;
 }
